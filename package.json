@@ -1,7 +1,7 @@
 {
   "name": "tdown",
   "version": "1.0.0",
-  "main": "dist/tdown.min.js",
+  "main": "dist/iselect.min.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "webpack"
@@ -12,7 +12,7 @@
     "custom-select",
     "vanilla-js"
   ],
-  "author": "",
+  "author": "Ibrahim Kholil",
   "license": "ISC",
   "description": "A customizable select dropdown component with vanilla JavaScript",
   "devDependencies": {
@@ -20,5 +20,9 @@
     "style-loader": "^4.0.0",
     "webpack": "^5.96.1",
     "webpack-cli": "^5.1.4"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ikholil/iselect.git"
   }
 }
