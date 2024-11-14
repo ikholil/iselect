@@ -5,7 +5,7 @@ A lightweight, customizable select dropdown component built with vanilla JavaScr
 ## Installation
 
 ```bash
-npm install custom-select-js
+npm install iselect
 ```
 
 ## Usage
