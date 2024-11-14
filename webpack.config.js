@@ -1,4 +1,5 @@
 const path = require('path');
+const HtmlWebpackPlugin = require('html-webpack-plugin')
 
 module.exports = {
     entry: './src/iselect.js',
@@ -10,6 +11,11 @@ module.exports = {
         globalObject: 'this',
     },
     mode: 'production',
+    devServer: {
+        watchFiles: ['src/**/*'],
+        hot: true,
+        port: 5555,    
+      },
     module: {
         rules: [
             {
@@ -17,5 +23,11 @@ module.exports = {
                 use: ['style-loader', 'css-loader']
             }
         ]
-    }
+    }, 
+    plugins:[
+        new HtmlWebpackPlugin({
+            filename: 'index.html',
+            template: './index.html' // Fix: Change `directory` to `rootDir`
+          })
+    ]
 };

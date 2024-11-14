@@ -24,7 +24,7 @@ npm install iselect
 </select>
 
 <!-- Include the JS -->
-<script src="node_modules/iselect-js/dist/iselect.js"></script>
+<script src="node_modules/iselect/dist/iselect.js"></script>
 ```
 
 Or import it in your JavaScript:

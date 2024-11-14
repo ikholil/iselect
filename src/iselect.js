@@ -13,8 +13,16 @@ export class CustomSelect {
       this.selectedLabel = null
       this.placeholder = placeholder
       this.selectedValue = null
-  
+
+      // Check for an initial selection
+      
       this.createCustomSelect()
+      const selectedOption = this.selectElement.options[this.selectElement.selectedIndex];
+      if (selectedOption) {
+        // this.placeholder = selectedOption.text;
+        // this.selectedValue = selectedOption.value;
+        this.selectOption(selectedOption.value, selectedOption.text)
+      }
     }
   
     createCustomSelect() {
