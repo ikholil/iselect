@@ -1,18 +1,17 @@
-# Custom Select JS
+# ISelect JS
 
 A lightweight, customizable select dropdown component built with vanilla JavaScript.
 
 ## Installation
 
 ```bash
-npm install custom-select-js
+npm install iselect
 ```
 
 ## Usage
 
 ```html
 <!-- Include the CSS -->
-<link rel="stylesheet" href="node_modules/custom-select-js/dist/custom-select.css">
 
 <!-- Create your select element -->
 <select class="custom-select" data-label="Options">
@@ -22,18 +21,14 @@ npm install custom-select-js
 </select>
 
 <!-- Include the JS -->
-<script src="node_modules/custom-select-js/dist/custom-select.js"></script>
+<script src="node_modules/iselect-js/dist/iselect.js"></script>
 ```
 
 Or import it in your JavaScript:
 
 ```javascript
-import { CustomSelect } from 'custom-select-js';
-import 'custom-select-js/dist/custom-select.css';
+import { CustomSelect } from 'iselect';
 
-// Initialize manually
-const select = document.querySelector('.custom-select');
-new CustomSelect(select, 'Choose an option');
 ```
 
 ## Features
