@@ -1,0 +1,24 @@
+{
+  "name": "tdown",
+  "version": "1.0.0",
+  "main": "dist/tdown.min.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack"
+  },
+  "keywords": [
+    "select",
+    "dropdown",
+    "custom-select",
+    "vanilla-js"
+  ],
+  "author": "",
+  "license": "ISC",
+  "description": "A customizable select dropdown component with vanilla JavaScript",
+  "devDependencies": {
+    "css-loader": "^7.1.2",
+    "style-loader": "^4.0.0",
+    "webpack": "^5.96.1",
+    "webpack-cli": "^5.1.4"
+  }
+}
