@@ -8,6 +8,9 @@ A lightweight, customizable select dropdown component built with vanilla JavaScr
 npm install iselect
 ```
 
+## Use cdn link 
+<script src="https://cdn.jsdelivr.net/npm/iselect"></script>
+
 ## Usage
 
 ```html
