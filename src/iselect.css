@@ -1,7 +1,10 @@
+:root {
+  --iselect-width: max-content;
+}
 .custom-select-wrapper {
   position: relative;
   display: inline-block;
-  max-width: max-content;
+  max-width: var(--iselect-width);
   min-width: 200px;
 }
 

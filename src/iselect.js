@@ -30,6 +30,9 @@ export class CustomSelect {
   
       this.customSelectWrapper = document.createElement('div')
       this.customSelectWrapper.className = 'custom-select-wrapper'
+      this.selectElement.classList.forEach((cls) => {
+        this.customSelectWrapper.classList.add(cls);
+      });
   
       this.customButton = document.createElement('button')
       this.customButton.className = 'custom-select-button'
