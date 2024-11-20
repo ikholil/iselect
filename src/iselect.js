@@ -13,14 +13,13 @@ export class CustomSelect {
       this.selectedLabel = null
       this.placeholder = placeholder
       this.selectedValue = null
+      this.caretIcon = null
 
       // Check for an initial selection
       
       this.createCustomSelect()
       const selectedOption = this.selectElement.options[this.selectElement.selectedIndex];
-      if (selectedOption) {
-        // this.placeholder = selectedOption.text;
-        // this.selectedValue = selectedOption.value;
+      if (selectedOption) {        
         this.selectOption(selectedOption.value, selectedOption.text)
       }
     }
@@ -43,10 +42,10 @@ export class CustomSelect {
       this.selectedLabel.textContent = this.placeholder
       this.customButton.appendChild(this.selectedLabel)
   
-      const caretIcon = document.createElement('span')
-      caretIcon.className = 'custom-select-caret'
-      caretIcon.innerHTML = '▼'
-      this.customButton.appendChild(caretIcon)
+      this.caretIcon = document.createElement('span')
+      this.caretIcon.className = 'custom-select-caret'
+      this.caretIcon.innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" class="size-4 inline-flex ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-width="2" d="M5 10l7 7 7-7"></path></svg>'
+      this.customButton.appendChild(this.caretIcon)
   
       this.customSelectWrapper.appendChild(this.customButton)
   
@@ -76,6 +75,7 @@ export class CustomSelect {
       document.addEventListener('click', (event) => {
         if (!this.customSelectWrapper.contains(event.target)) {
           this.customDropdown.classList.add('hidden')
+          this.caretIcon.classList.remove('active')
         }
       })
     }
@@ -83,6 +83,7 @@ export class CustomSelect {
     toggleDropdown() {
       if (!this.customDropdown.classList.contains('hidden')) {
         this.customDropdown.classList.add('hidden')
+        this.caretIcon.classList.remove('active')
       } else {
         this.customDropdown.classList.remove('hidden')
   
@@ -92,6 +93,7 @@ export class CustomSelect {
         const dropdownHeight = this.customDropdown.offsetHeight
   
         this.customDropdown.classList.add('hidden')
+        this.caretIcon.classList.add('active')
   
         if (spaceBelow < dropdownHeight) {
           this.customDropdown.style.top = `-${dropdownHeight + 4}px`
@@ -116,6 +118,7 @@ export class CustomSelect {
         }
       })
   
+      this.caretIcon.classList.remove('active')
       this.customDropdown.classList.add('hidden')
     }
   }

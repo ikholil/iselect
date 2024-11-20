@@ -88,4 +88,17 @@
 .custom-select-caret {
   font-size: 0.75rem;
   margin-left: 0.5rem;
+  display: flex;
+  color: black;
+}
+.dark .custom-select-caret {
+  color: #ffffff;
+}
+.custom-select-caret svg {
+  width: 1.1rem;
+  height: 1.1rem;
+  transition-duration: 400ms;
+}
+.custom-select-caret.active svg {
+  transform: rotate(180deg);
 }
