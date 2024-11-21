@@ -2,7 +2,7 @@ const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 
 module.exports = {
-    entry: './src/iselect.js',
+    entry: './src/test.js',
     output: {
         path: path.resolve(__dirname, 'dist'),
         filename: 'iselect.min.js',

@@ -8,12 +8,12 @@ A lightweight, customizable select dropdown component built with vanilla JavaScr
 npm install iselect
 ```
 
-## Use cdn link 
-[<script src="https://cdn.jsdelivr.net/npm/iselect"></script>](<script src="https://cdn.jsdelivr.net/npm/iselect"></script>)
+#### CDN Link
+[https://cdn.jsdelivr.net/npm/iselect](https://cdn.jsdelivr.net/npm/iselect)
 
-## Usage
+#### Usage in CommonJS
 
-### Add 'iselect' class in native select tag. 
+#### Add 'iselect' class in native select tag. 
 ```html
 <!-- Create your select element -->
 <select class="iselect">
@@ -25,7 +25,7 @@ npm install iselect
 <script src="node_modules/iselect/dist/iselect.js"></script>
 ```
 
-## Add a label 
+#### Add a label 
 
 ```html
 <select class="iselect" data-label="Select Option">
@@ -34,14 +34,20 @@ npm install iselect
   <option value="3">Option 3</option>
 </select>
 ```
-Or add manually
+
+#### Usage in ESM 
 
 ```javascript
+import { Iselect } from "iselect"
 
+const selects = document.querySelectorAll("select")
+selects.forEach((select) => {
+    new Iselect(select)
+})
 
 ```
 
-## Features
+### Features
 
 - Fully customizable styling
 - Dark mode support
@@ -50,6 +56,6 @@ Or add manually
 - Custom labels
 - No dependencies
 
-## License
+### License
 
 MIT

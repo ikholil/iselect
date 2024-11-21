@@ -27,5 +27,8 @@
   "repository": {
     "type": "git",
     "url": "git+https://github.com/ikholil/iselect.git"
+  },
+  "dependencies": {
+    "iselect": "^1.0.5"
   }
 }
