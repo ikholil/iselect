@@ -6,11 +6,11 @@ module.exports = {
     output: {
         path: path.resolve(__dirname, 'dist'),
         filename: 'iselect.min.js',
-        library: 'Tdown',
+        library: 'Iselect',
         libraryTarget: 'umd',
         globalObject: 'this',
     },
-    mode: 'production',
+    mode: 'development',
     devServer: {
         watchFiles: ['src/**/*'],
         hot: true,
@@ -27,7 +27,7 @@ module.exports = {
     plugins:[
         new HtmlWebpackPlugin({
             filename: 'index.html',
-            template: './index.html' // Fix: Change `directory` to `rootDir`
+            template: './src/index.html' // Fix: Change `directory` to `rootDir`
           })
     ]
 };

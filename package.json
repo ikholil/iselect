@@ -14,7 +14,7 @@
     "vanilla-js"
   ],
   "author": "Ibrahim Kholil",
-  "license": "ISC",
+  "license": "MIT",
   "description": "A customizable select dropdown component with vanilla JavaScript",
   "devDependencies": {
     "css-loader": "^7.1.2",

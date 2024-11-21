@@ -1,5 +1,5 @@
 import './iselect.css';
-export class CustomSelect {
+export class Iselect {
     constructor(selectElement, placeholder = 'Select an option') {
       if (!(selectElement instanceof HTMLSelectElement)) {
         console.error('Provided element is not a valid <select> element.')
@@ -125,12 +125,12 @@ export class CustomSelect {
   
   // Initialize on DOM content loaded
   if (typeof window !== 'undefined') {
-    window.CustomSelect = CustomSelect
+    window.Iselect = Iselect
     document.addEventListener('DOMContentLoaded', () => {
-      const selectElements = document.querySelectorAll('.custom-select')
+      const selectElements = document.querySelectorAll('.iselect')
       if (selectElements.length === 0) return
       selectElements.forEach((selectElement) => {
-        new CustomSelect(selectElement, 'Choose an option')
+        new Iselect(selectElement, 'Choose an option')
       })
     })
   }

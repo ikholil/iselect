@@ -1,13 +1,13 @@
-:root {
-  --iselect-width: max-content;
-}
 .custom-select-wrapper {
   position: relative;
   display: inline-block;
-  max-width: var(--iselect-width);
+  width: max-content;
   min-width: 200px;
 }
-
+.custom-select-wrapper.full-width {
+  min-width: 100%;
+  width: 100%;
+}
 .custom-select-button {
   width: 100%;
   display: flex;
