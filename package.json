@@ -1,21 +1,12 @@
 {
   "name": "iselect",
   "version": "1.0.5",
-  "main": "dist/iselect.min.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "webpack",
-    "dev": "webpack serve"
-  },
-  "keywords": [
-    "select",
-    "dropdown",
-    "custom-select",
-    "vanilla-js"
-  ],
   "author": "Ibrahim Kholil",
-  "license": "MIT",
-  "description": "A customizable select dropdown component with vanilla JavaScript",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ikholil/iselect.git"
+  },
+  "main": "dist/iselect.min.js",
   "devDependencies": {
     "css-loader": "^7.1.2",
     "html-webpack-plugin": "^5.6.3",
@@ -24,11 +15,17 @@
     "webpack-cli": "^5.1.4",
     "webpack-dev-server": "^5.1.0"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/ikholil/iselect.git"
-  },
-  "dependencies": {
-    "iselect": "^1.0.5"
+  "description": "A customizable select dropdown component with vanilla JavaScript",
+  "keywords": [
+    "select",
+    "dropdown",
+    "custom-select",
+    "vanilla-js"
+  ],
+  "license": "MIT",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack",
+    "dev": "webpack serve"
   }
 }

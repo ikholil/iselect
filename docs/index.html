@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Iselect Library Documentation</title>
+    <style>
+      /* Base Styles */
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        line-height: 1.6;
+        background: #f4f4f9;
+      }
+      header {
+        background: #4a90e2;
+        color: white;
+        padding: 1rem 2rem;
+        text-align: center;
+      }
+      header h1 {
+        margin: 0;
+      }
+      header .links {
+        display: flex;
+        justify-content: center;
+        gap: 1rem;
+        margin: 28px 0;
+      }
+      header .links a {
+        display: inline-flex;
+        padding: 12px 20px;
+        border-radius: 8px;
+        text-decoration: none;
+        color: white;
+        background: #4a90e2;
+        margin-right: 1rem;
+        font-size: 0.8rem;
+        border: 1px solid white;
+      }
+      .container {
+        max-width: 1200px;
+        margin: 2rem auto;
+        padding: 1rem;
+        background: white;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        border-radius: 8px;
+      }
+      h2 {
+        color: #333;
+      }
+      code {
+        background: #f9f9f9;
+        padding: 2px 4px;
+        border-radius: 4px;
+        font-family: "Courier New", Courier, monospace;
+      }
+      pre {
+        background: #f9f9f9;
+        padding: 1rem;
+        border-radius: 8px;
+        overflow-x: auto;
+      }
+      .select-demo {
+        margin: 2rem 0;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Iselect Library Documentation</h1>
+      <div class="links">
+        <a href="https://github.com/ikholil/iselect">View on GitHub</a>
+        <a href="https://www.npmjs.com/package/iselect">NPM</a>
+      </div>
+      <p>A lightweight JavaScript library for creating custom dropdowns.</p>
+    </header>
+
+    <div class="container">
+      <h2>Introduction</h2>
+      <p>
+        <code>Iselect</code> is a lightweight, customizable JavaScript library
+        for transforming native <code>&lt;select&gt;</code> elements into modern
+        dropdowns. It’s accessible, supports keyboard navigation, and is highly
+        customizable.
+      </p>
+
+      <h2>Features</h2>
+      <ul>
+        <li>Easy to integrate with your project.</li>
+        <li>Customizable through CSS variables.</li>
+        <li>Dynamic dropdown positioning based on available space.</li>
+        <li>Supports placeholders and default selected values.</li>
+        <li>Lightweight and framework-agnostic.</li>
+      </ul>
+
+      <h2>Installation</h2>
+      <p>Include the library in your project using the following links:</p>
+      <pre><code>
+&lt;script src="path/to/iselect.min.js"&gt;&lt;/script&gt;</code></pre>
+
+      <h2>Usage Example</h2>
+      <p>Here's how to use <code>Iselect</code> in your project:</p>
+      <p>
+        Just add 'iselect' class in select tag. It will create a nice select
+        dropdown.
+      </p>
+      <pre><code>&lt;!-- Native Select Element --&gt;
+&lt;select class="iselect"&gt;
+  &lt;option value="" disabled selected&gt;Select an option&lt;/option&gt;
+  &lt;option value="1"&gt;Option 1&lt;/option&gt;
+  &lt;option value="2"&gt;Option 2&lt;/option&gt;
+  &lt;option value="3"&gt;Option 3&lt;/option&gt;
+&lt;/select&gt;
+
+</code></pre>
+
+      <h2>Custom Select in Action</h2>
+      <div class="select-demo">
+        <select class="iselect">
+          <option value="" disabled selected>Select an option</option>
+          <option value="1">Option 1</option>
+          <option value="2">Option 2</option>
+          <option value="3">Option 3</option>
+        </select>
+      </div>
+
+      <h2>With Label</h2>
+      <p>Add data-label attribute to select tag for show a label.</p>
+      <div class="select-demo">
+        <select class="iselect" data-label="Select Option">
+          <option value="" disabled selected>Select an option</option>
+          <option value="1">Option 1</option>
+          <option value="2">Option 2</option>
+          <option value="3">Option 3</option>
+        </select>
+      </div>
+
+      <h2>Dynamic Dropdown Positioning</h2>
+      <p>
+        The library automatically adjusts the dropdown position based on
+        available space. If there's insufficient space below, the dropdown
+        appears above the button.
+      </p>
+
+      <h2>Contributing</h2>
+      <p>
+        Found a bug or have a feature request? Feel free to contribute by
+        raising an issue or submitting a pull request on the library's GitHub
+        repository.
+      </p>
+    </div>
+
+    <!-- iselect -->
+    <script src="../dist/iselect.min.js"></script>
+  </body>
+</html>
